@@ -17,7 +17,7 @@ export class ContentCardComponent {
       title: "Bigg Boss",
       description: "Bigg Boss is an Indian reality television game show franchise based on the Dutch reality show Big Brother. It is produced by Endemol Shine India through Viacom18 and Disney Star. Subsequently, the various versions of the show are made internationally available through OTT platforms Voot and Disney+ Hotstar.Bigg Boss was originally started in Hindi language and has been extended into seven languages spoken in the Indian sub-continent, including Kannada, Bengali, Tamil, Telugu, Marathi and Malayalam.",
       creator: " Endemol Shine",
-      imgURL: "https://1.bp.blogspot.com/-dKoig5fjHtA/XaXkDM_S-ZI/AAAAAAAAAXY/DfYVdWFiK4oTvDQ3gyiwdUZ0UaKZfvvUACLcBGAsYHQ/s1600/bigboss11a.jpg",
+      imgURL: "https://interviewerpr.com/wp-content/uploads/2021/07/Bigg-Boss.jpg",
       type: "Reality Show"
     });
     this.contentList.add({id: 1,
