@@ -24,10 +24,13 @@ export class ContentList{
 
 getContentDetails(index: number){
         let content = this.contents[index];
-        return `${content.title}</br>
+        return `<h1><strong>${content.title}</strong></h1></br>
                 ${content.description}</br>
+                </br>
                 ${content.creator}</br>
+                </br>
                 ${content.type}</br>
-                <img src="${content.imgURL}">`;
+                </br>
+                <img width="474" src="${content.imgURL}">`;
     }
 }
