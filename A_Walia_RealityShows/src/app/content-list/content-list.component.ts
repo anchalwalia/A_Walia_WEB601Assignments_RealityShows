@@ -35,7 +35,7 @@ export class ContentListComponent {
         creator: "Colors",
         imgURL: "https://tse2.mm.bing.net/th?id=OIP.JpyPXBb0b1iWLT8mo6rSGwHaCn&pid=Api&P=0",
         type: "Action Reality show",
-      }
+      },
       {
         id: 3,
         title: "Ssshhhh...Koi Hai",
@@ -61,6 +61,11 @@ export class ContentListComponent {
         type: "Super power"
       },
     ]
+  }
+
+  clickLog(content: any){
+    console.log(`ID: ${content.id}`);
+    console.log(`Title: ${content.title}`);
   }
 
 }
