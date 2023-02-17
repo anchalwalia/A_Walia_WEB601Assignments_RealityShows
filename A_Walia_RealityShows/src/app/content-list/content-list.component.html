@@ -1,5 +1,55 @@
 
-<div *ngFor="let content of contentCards | slice: 0:5" class="card">
+<div>
+    <h1>No Type</h1>
+    <div *ngFor="let content of contentCards | contentTypeFilter" class="card">
+        <img [src]="content.imgURL" alt={{content.title}} (click)="clickLog(content)">
+        <h2>{{content.title}}</h2>
+        <div>{{content.description}}</div>
+        <div>Creator: {{content.creator}}</div>
+        <div>Type: {{content.type}}</div>
+        <div>Tags: 
+            <ng-container *ngFor="let tag of content.tags">
+                {{tag}},
+            </ng-container>
+        </div>
+</div>
+</div>
+
+<div>
+    <h1>Reality Show</h1>
+    <div *ngFor="let content of contentCards | contentTypeFilter:'Reality Show'" class="card">
+        <img [src]="content.imgURL" alt={{content.title}} (click)="clickLog(content)">
+        <h2>{{content.title}}</h2>
+        <div>{{content.description}}</div>
+        <div>Creator: {{content.creator}}</div>
+        <div>Type: {{content.type}}</div>
+        <div>Tags: 
+            <ng-container *ngFor="let tag of content.tags">
+                {{tag}},
+            </ng-container>
+        </div>
+</div>
+</div>
+
+<div>
+    <h1>Horror</h1>
+    <div *ngFor="let content of contentCards | contentTypeFilter:'Horror'" class="card">
+        <img [src]="content.imgURL" alt={{content.title}} (click)="clickLog(content)">
+        <h2>{{content.title}}</h2>
+        <div>{{content.description}}</div>
+        <div>Creator: {{content.creator}}</div>
+        <div>Type: {{content.type}}</div>
+        <div>Tags: 
+            <ng-container *ngFor="let tag of content.tags">
+                {{tag}},
+            </ng-container>
+        </div>
+</div>
+</div>
+
+div>
+    <h1>Super power</h1>
+    <div *ngFor="let content of contentCards | contentTypeFilter:'Super power'" class="card">
         <img [src]="content.imgURL" alt={{content.title}} (click)="clickLog(content)">
         <h2>{{content.title}}</h2>
         <div>{{content.description}}</div>

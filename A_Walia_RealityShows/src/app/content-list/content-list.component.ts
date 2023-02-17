@@ -26,7 +26,7 @@ export class ContentListComponent {
         description: "MasterChef is a competitive cooking show television format created by Franc Roddam, which originated with the UK version in July 1990. The format was revived and updated for the BBC in February 2005 by executive producers Roddam and John Silver with series producer Karen Ross.The revived format is sold internationally by Banijay. Its first international adaptation was MasterChef Australia, which began in 2009. The show has since been adapted in several other countries.",
         creator: "Francis George",
         imgURL: "https://tse2.mm.bing.net/th?id=OIP.SAr4U7xYf6SgbqwQ-RkDIAHaEK&pid=Api&P=0",
-        type: "Cooking Reality Show"
+        type: "Reality Show"
       },
       {
         id: 2,
@@ -34,7 +34,7 @@ export class ContentListComponent {
         description: "Khatron Ke Khiladi (Fear Factor: Players of Danger) simply known as Khatron Ke Khiladi is an Indian Hindi-language stunt based reality television series based on the American series Fear Factor.[1] First launched as Fear Factor India on Sony TV it was sold to Colors TV and was relaunched as Fear Factor: Khatron Ke Khiladi on 21 July 2008.",
         creator: "Colors",
         imgURL: "https://tse2.mm.bing.net/th?id=OIP.JpyPXBb0b1iWLT8mo6rSGwHaCn&pid=Api&P=0",
-        type: "Action Reality show",
+        type: "Reality show",
       },
       {
         id: 3,
