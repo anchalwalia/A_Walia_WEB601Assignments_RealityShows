@@ -50,7 +50,6 @@ export class ContentListComponent {
         description: "Since the dawn of mankind, humanity was at peace until the arrival of the Kali Yuga. Since then, greed and hatred have taken over humanity and have been deteriorating it for the past 6000 years. To end this, a mystical sect of saints known as Suryanshis chose a man to rise up against all odds and defeat the evil prevailing within the society. He was taught the way to energise the 7 chakras of the body through Kundalini Yoga that helped him get mystical and supernatural powers. ",
         creator: "DD",
         imgURL: "https://www.pinkvilla.com/files/styles/contentpreview/public/shaktimaan_fans_can_rejoice_as_mukesh_khanna_reveals_he_is_working_on_a_contemporary_but_rooted_sequel.jpg?itok=fe0T7MiC",
-        type: "Super Hero"
       },
       {
         id: 5,
@@ -59,6 +58,13 @@ export class ContentListComponent {
         creator: "Star",
         imgURL: "https://i0.wp.com/bestoftheyear.in/wp-content/uploads/2018/03/shakalak.jpg?fit=1024%2C620&ssl=1",
         type: "Super power"
+      },
+      {
+        id: 6,
+        title: "Alif Laila",
+        description: "Alaf Laila is an Indian television series based on the One Thousand and One Nights, also known as the Arabian Nights.[1] It was produced by Sagar Arts.[2] It was made in two seasons. The series from 1993 to 1997 for 143 episodes on DD National.",
+        creator: "Anand Sagar",
+        imgURL: "https://imgs.search.brave.com/kmbva68uLZXgu7aDe2dBq2gqPtl3k9pJj7VQkg6JUYQ/rs:fit:1200:720:1/g:ce/aHR0cHM6Ly9pLnl0/aW1nLmNvbS92aS9Q/WFJLeEtUTjdWQS9t/YXhyZXNkZWZhdWx0/LmpwZw",
       },
     ]
   }
