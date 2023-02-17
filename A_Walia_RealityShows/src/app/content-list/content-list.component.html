@@ -1,8 +1,14 @@
 <div>
     <input type="text" [(ngModel)]="title" placeholder="search title">
-    <button>Search</button>
+    <button (click)="searchTitle()">Search</button>
 </div>
 
+<div *ngIf="titleFound !== null">
+    <p [style.color]="titleFound ? 'green' : 'red'">
+        {{titleFound ? 'Title exists': 'Title Not exists'}}
+  </p>
+
+</div>
 
 
 

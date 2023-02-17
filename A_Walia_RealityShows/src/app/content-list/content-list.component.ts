@@ -9,6 +9,12 @@ import { Content } from '../helper-files/content-interface';
 export class ContentListComponent {
   contentCards: Content[];
   title: string ='';
+  titleFound: boolean | null = null;
+
+  searchTitle(){
+    this.titleFound = this.contentCards.some(contentCard => contentCard.title.toLowerCase() === this.title.toLowerCase
+    ());
+  }
 
   constructor(){
     this.contentCards = [
