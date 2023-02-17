@@ -8,6 +8,7 @@ import { Content } from '../helper-files/content-interface';
 })
 export class ContentListComponent {
   contentCards: Content[];
+  title: string ='';
 
   constructor(){
     this.contentCards = [
