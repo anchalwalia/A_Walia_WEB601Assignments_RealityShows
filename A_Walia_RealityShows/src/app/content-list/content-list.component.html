@@ -27,11 +27,11 @@
         <h2>{{content.title}}</h2>
         <div>{{content.description}}</div>
         <div>Creator: {{content.creator}}</div>
-        <div appHoverAffect>Type: {{content.type}}</div>
-        <div>Tags: 
-            <ng-container *ngFor="let tag of content.tags">
+        <div appHoverAffect='underline'>Type: {{content.type}}</div>
+        <div *ngIf="content.tags">Tags: 
+            <span *ngFor="let tag of content.tags" appHoverAffect="bold">
                 {{tag}},
-            </ng-container>
+            </span>
         </div>
 </div>
 </div>
@@ -48,11 +48,11 @@
         <h2>{{content.title}}</h2>
         <div>{{content.description}}</div>
         <div>Creator: {{content.creator}}</div>
-        <div appHoverAffect>Type: {{content.type}}</div>
-        <div>Tags: 
-            <ng-container *ngFor="let tag of content.tags">
+        <div appHoverAffect='underline'>Type: {{content.type}}</div>
+        <div *ngIf="content.tags">Tags: 
+            <span *ngFor="let tag of content.tags" appHoverAffect="bold">
                 {{tag}},
-            </ng-container>
+            </span>
         </div>
 </div>
 </div>
@@ -69,11 +69,11 @@
         <h2>{{content.title}}</h2>
         <div>{{content.description}}</div>
         <div>Creator: {{content.creator}}</div>
-        <div appHoverAffect>Type: {{content.type}}</div>
-        <div>Tags: 
-            <ng-container *ngFor="let tag of content.tags">
+        <div appHoverAffect='underline'>Type: {{content.type}}</div>
+        <div *ngIf="content.tags">Tags: 
+            <span *ngFor="let tag of content.tags" appHoverAffect="bold">
                 {{tag}},
-            </ng-container>
+            </span>
         </div>
 </div>
 </div>
@@ -90,10 +90,10 @@
         <h2>{{content.title}}</h2>
         <div>{{content.description}}</div>
         <div>Creator: {{content.creator}}</div>
-        <div appHoverAffect>Type: {{content.type}}</div>
-        <div>Tags: 
-            <ng-container *ngFor="let tag of content.tags">
+        <div appHoverAffect='underline'>Type: {{content.type}}</div>
+        <div *ngIf="content.tags">Tags: 
+            <span *ngFor="let tag of content.tags" appHoverAffect="bold">
                 {{tag}},
-            </ng-container>
+            </span>
         </div>
 </div>
