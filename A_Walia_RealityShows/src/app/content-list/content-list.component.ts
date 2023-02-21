@@ -10,6 +10,7 @@ export class ContentListComponent {
   contentCards: Content[];
   title: string ='';
   titleFound: boolean | null = null;
+  imgurl: string ='https://3.bp.blogspot.com/-s22fJGFLi3U/W2W4VEGnM0I/AAAAAAAADSo/0jYvQPESyQsXnRTx0gdN8B3AaSHHCLfuACLcBGAs/s1600/Screen%2BShot%2B2018-08-04%2Bat%2B3.29.01%2BPM.png';
 
   searchTitle(){
     this.titleFound = this.contentCards.some(contentCard => contentCard.title.toLowerCase() === this.title.toLowerCase
