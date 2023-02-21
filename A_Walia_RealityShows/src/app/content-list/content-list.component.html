@@ -16,7 +16,14 @@
 <div>
     <h1>No Type</h1>
     <div *ngFor="let content of contentCards | contentTypeFilter" class="card nt">
-        <img [src]="content.imgURL" alt={{content.title}} (click)="clickLog(content)">
+        
+        <div *ngIf="content.imgURL; else imglink">
+            <img [src]="content.imgURL" alt={{content.title}} (click)="clickLog(content)">
+        </div>
+        <ng-template #imglink>
+            <img [src]="imgurl" alt={{content.title}} (click)="clickLog(content)">
+        </ng-template>
+
         <h2>{{content.title}}</h2>
         <div>{{content.description}}</div>
         <div>Creator: {{content.creator}}</div>
@@ -32,7 +39,12 @@
 <div>
     <h1>Reality Show</h1>
     <div *ngFor="let content of contentCards | contentTypeFilter:'Reality Show'" class="card rs">
-        <img [src]="content.imgURL" alt={{content.title}} (click)="clickLog(content)">
+        <div *ngIf="content.imgURL; else imglink">
+            <img [src]="content.imgURL" alt={{content.title}} (click)="clickLog(content)">
+        </div>
+        <ng-template #imglink>
+            <img [src]="imgurl" alt={{content.title}} (click)="clickLog(content)">
+        </ng-template>
         <h2>{{content.title}}</h2>
         <div>{{content.description}}</div>
         <div>Creator: {{content.creator}}</div>
@@ -48,7 +60,12 @@
 <div>
     <h1>Horror</h1>
     <div *ngFor="let content of contentCards | contentTypeFilter:'Horror'" class="card h">
-        <img [src]="content.imgURL" alt={{content.title}} (click)="clickLog(content)">
+        <div *ngIf="content.imgURL; else imglink">
+            <img [src]="content.imgURL" alt={{content.title}} (click)="clickLog(content)">
+        </div>
+        <ng-template #imglink>
+            <img [src]="imgurl" alt={{content.title}} (click)="clickLog(content)">
+        </ng-template>
         <h2>{{content.title}}</h2>
         <div>{{content.description}}</div>
         <div>Creator: {{content.creator}}</div>
@@ -64,7 +81,12 @@
 <div>
     <h1>Super power</h1>
     <div *ngFor="let content of contentCards | contentTypeFilter:'Super power'" class="card sp">
-        <img [src]="content.imgURL" alt={{content.title}} (click)="clickLog(content)">
+        <div *ngIf="content.imgURL; else imglink">
+            <img [src]="content.imgURL" alt={{content.title}} (click)="clickLog(content)">
+        </div>
+        <ng-template #imglink>
+            <img [src]="imgurl" alt={{content.title}} (click)="clickLog(content)">
+        </ng-template>
         <h2>{{content.title}}</h2>
         <div>{{content.description}}</div>
         <div>Creator: {{content.creator}}</div>

@@ -49,7 +49,6 @@ export class ContentListComponent {
         title: "Ssshhhh...Koi Hai",
         description: "Initial episodes were the stories related from every aspect of horror and thrillers and in later episodes a ghostbuster was introduced named Vikraal played by Mamik Singh, who captures ghosts. Later again, the show takes turn over after the return of Mayakaal, who was the most powerful wizard and captured Vikraal.",
         creator: "STAR PLUS",
-        imgURL: "https://magazinefasr781.weebly.com/uploads/1/2/5/7/125796914/236012536.jpg",
         type: "Horror"
       },
       {
@@ -64,7 +63,6 @@ export class ContentListComponent {
         title: "ShakaLaka Boom Boom",
         description: "The first season revolves around the central character, Sanju, finding a magical pencil, which has the ability to bring things drawn with it to life.[6] The second season centres on an alien, Shaan, and his adventures with the magical pencil.[7] The third season is about Sanju and Shaan's adventures in a magic school called Jadoo High, and in the fourth season, Sanju travels to the year 2022 to protect his family.",
         creator: "Star",
-        imgURL: "https://i0.wp.com/bestoftheyear.in/wp-content/uploads/2018/03/shakalak.jpg?fit=1024%2C620&ssl=1",
         type: "Super power"
       },
       {
