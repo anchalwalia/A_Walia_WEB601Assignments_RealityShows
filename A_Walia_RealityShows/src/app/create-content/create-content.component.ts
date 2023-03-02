@@ -10,7 +10,7 @@ export class CreateContentComponent {
   @Output() createEvent = new EventEmitter<any>();
 
 
-  addContent(){
+  addCardContent(){
     this.createEvent.emit(this.newCardContent);
     this.newCardContent = {};
   }
