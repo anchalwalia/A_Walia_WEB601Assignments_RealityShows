@@ -17,6 +17,12 @@ export class ContentListComponent {
     ());
   }
 
+  addCardContent(newCardContent: any){
+    this.contentCards.push(newCardContent);
+    this.contentCards= [...this.contentCards];
+    console.log(`Card content added successfully`);
+  }
+
   constructor(){
     this.contentCards = [
       {
