@@ -1,31 +1,3 @@
 <div>
-    <mat-form-field>
-        <mat-label>Title:</mat-label>
-        <input matInput type="text" [(ngModel)]="newCardContent.title">
-    </mat-form-field>
-
-    <mat-form-field>
-        <mat-label>Description:</mat-label>
-        <input matInput type="text" [(ngModel)]="newCardContent.description">
-    </mat-form-field>
-
-    <mat-form-field>
-        <mat-label>Creator:</mat-label>
-        <input matInput type="text" [(ngModel)]="newCardContent.creator">
-    </mat-form-field>
-
-    <mat-form-field>
-        <mat-label>Image Link:</mat-label>
-        <input matInput type="text" [(ngModel)]="newCardContent.imgURL"> 
-    </mat-form-field>
-
-   <mat-form-field>
-        <mat-label>Type:</mat-label>
-        <input matInput type="text" [(ngModel)]="newCardContent.type">
-   </mat-form-field>
-
-    <div>
-        <button mat-raised-button color="primary" (click)="addCardContent()">Add Content</button>
-    </div>
-    <hr>
+    <button mat-raised-button color="primary" (click)="addCardContentDialog()">Add New Content</button>
 </div>
