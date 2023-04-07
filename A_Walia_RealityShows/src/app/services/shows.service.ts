@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable, of } from 'rxjs';
 import { Content } from '../helper-files/content-interface';
@@ -9,11 +10,11 @@ import { MessageService } from './message.service';
 })
 export class ShowsService {
 
-  constructor(private messageService: MessageService) { }
+  constructor(private http: HttpClient, private messageService: MessageService) { }
 
   getContent(): Observable<Content[]>{
     this.messageService.addMessage("Content array loaded!");
-    return of(contentCards);
+    return this.http.get<Content[]>("/api/shows");
   }
 
   getContentById(id: number): Observable<any> {
