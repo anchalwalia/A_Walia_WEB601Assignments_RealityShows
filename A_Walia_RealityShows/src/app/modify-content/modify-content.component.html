@@ -1,0 +1,21 @@
+<div>
+
+    Title: <br> 
+    <input type="text" [(ngModel)]="newCardContent.title"> <br> <br>
+
+    Description: <br> 
+    <input type="text" [(ngModel)]="newCardContent.description"> <br> <br>
+
+    Creator: <br>
+    <input type="text" [(ngModel)]="newCardContent.creator"> <br> <br>
+
+    Image Link: <br> 
+    <input type="text" [(ngModel)]="newCardContent.imgURL"> <br> <br> 
+
+    Type: <br> 
+    <input type="text" [(ngModel)]="newCardContent.type"> <br> <br>
+
+    <div>
+        <button (click)="addCardContent()">Add Content</button>
+    </div>
+</div>

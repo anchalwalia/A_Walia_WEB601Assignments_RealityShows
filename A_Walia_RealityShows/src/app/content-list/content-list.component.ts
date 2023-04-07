@@ -31,5 +31,12 @@ export class ContentListComponent {
     console.log(`Title: ${content.title}`);
   }
 
+  addCardContent(newCardContent: Content){
+    this.ShowsService.addShow(newCardContent).subscribe(newShowFromServer => {
+      this.contentCards.push(newShowFromServer);
+      this.contentCards = [...this.contentCards];
+    });
+  }
+
 }
 
