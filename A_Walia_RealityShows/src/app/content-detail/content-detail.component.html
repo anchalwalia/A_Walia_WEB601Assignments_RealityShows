@@ -1,1 +1,24 @@
-<p>content-detail works!</p>
+<div class="content">
+    <div>
+        <div *ngIf="content.imgURL; else imglink">
+            <img mat-card-image [src]="content.imgURL" alt={{content.title}} (click)="clickLog(content)">
+        </div>
+        <ng-template #imglink>
+            <img mat-card-image [src]="imgurl" alt={{content.title}} (click)="clickLog(content)">
+        </ng-template>
+    </div>
+    <div>
+        <h2>{{content.title}}</h2>
+        <div>{{content.description}}</div>
+        <div>Creator: {{content.creator}}</div>
+        <div appHoverAffect='underline'>Type: {{content.type}}</div>
+        <div *ngIf="content.tags">Tags: 
+            <span *ngFor="let tag of content.tags" appHoverAffect="bold">
+                {{tag}},
+            </span>
+        </div>
+    </div>
+    <div class="mt-5">
+        <a routerLink="/list">See full List</a>
+    </div>
+</div>
