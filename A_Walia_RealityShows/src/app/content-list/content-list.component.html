@@ -20,16 +20,16 @@
 <div>
     <h1>No Type</h1>
     <mat-card *ngFor="let content of contentCards | contentTypeFilter" class="card nt">
-        
-        <mat-card-header>
-            <div *ngIf="content.imgURL; else imglink">
-                <img mat-card-image [src]="content.imgURL" alt={{content.title}} (click)="clickLog(content)">
-            </div>
-            <ng-template #imglink>
-                <img mat-card-image [src]="imgurl" alt={{content.title}} (click)="clickLog(content)">
-            </ng-template>
-        </mat-card-header>
-
+        <a routerLink="/list/{{content.id}}">
+            <mat-card-header>
+                <div *ngIf="content.imgURL; else imglink">
+                    <img mat-card-image [src]="content.imgURL" alt={{content.title}} (click)="clickLog(content)">
+                </div>
+                <ng-template #imglink>
+                    <img mat-card-image [src]="imgurl" alt={{content.title}} (click)="clickLog(content)">
+                </ng-template>
+            </mat-card-header>
+        </a>
         <mat-card-content>
             <h2>{{content.title}}</h2>
             <div>{{content.description}}</div>
@@ -49,14 +49,16 @@
 <div>
     <h1>Reality Show</h1>
     <mat-card *ngFor="let content of contentCards | contentTypeFilter:'Reality Show'" class="card rs">
-        <mat-card-header>
-            <div *ngIf="content.imgURL; else imglink">
-                <img mat-card-image [src]="content.imgURL" alt={{content.title}} (click)="clickLog(content)">
-            </div>
-            <ng-template #imglink>
-                <img mat-card-image [src]="imgurl" alt={{content.title}} (click)="clickLog(content)">
-            </ng-template>
-        </mat-card-header>
+        <a routerLink="/list/{{content.id}}">
+            <mat-card-header>
+                <div *ngIf="content.imgURL; else imglink">
+                    <img mat-card-image [src]="content.imgURL" alt={{content.title}} (click)="clickLog(content)">
+                </div>
+                <ng-template #imglink>
+                    <img mat-card-image [src]="imgurl" alt={{content.title}} (click)="clickLog(content)">
+                </ng-template>
+            </mat-card-header>
+        </a>
 
         <mat-card-content>
             <h2>{{content.title}}</h2>
@@ -77,14 +79,16 @@
 <div>
     <h1>Horror</h1>
     <mat-card *ngFor="let content of contentCards | contentTypeFilter:'Horror'" class="card h">
-        <mat-card-header>
-            <div *ngIf="content.imgURL; else imglink">
-                <img mat-card-image [src]="content.imgURL" alt={{content.title}} (click)="clickLog(content)">
-            </div>
-            <ng-template #imglink>
-                <img mat-card-image [src]="imgurl" alt={{content.title}} (click)="clickLog(content)">
-            </ng-template>
-        </mat-card-header>
+        <a routerLink="/list/{{content.id}}">
+            <mat-card-header>
+                <div *ngIf="content.imgURL; else imglink">
+                    <img mat-card-image [src]="content.imgURL" alt={{content.title}} (click)="clickLog(content)">
+                </div>
+                <ng-template #imglink>
+                    <img mat-card-image [src]="imgurl" alt={{content.title}} (click)="clickLog(content)">
+                </ng-template>
+            </mat-card-header>
+        </a>
 
         <mat-card-content>
             <h2>{{content.title}}</h2>
@@ -105,14 +109,16 @@
 <div>
     <h1>Super power</h1>
     <mat-card *ngFor="let content of contentCards | contentTypeFilter:'Super power'" class="card sp">
-        <mat-card-header>
-            <div *ngIf="content.imgURL; else imglink">
-                <img mat-card-image [src]="content.imgURL" alt={{content.title}} (click)="clickLog(content)">
-            </div>
-            <ng-template #imglink>
-                <img mat-card-image [src]="imgurl" alt={{content.title}} (click)="clickLog(content)">
-            </ng-template>
-        </mat-card-header>
+        <a routerLink="/list/{{content.id}}">
+            <mat-card-header>
+                <div *ngIf="content.imgURL; else imglink">
+                    <img mat-card-image [src]="content.imgURL" alt={{content.title}} (click)="clickLog(content)">
+                </div>
+                <ng-template #imglink>
+                    <img mat-card-image [src]="imgurl" alt={{content.title}} (click)="clickLog(content)">
+                </ng-template>
+            </mat-card-header>
+        </a>
 
         <mat-card-content>
             <h2>{{content.title}}</h2>
